@@ -1,0 +1,206 @@
+/* caixa pai que leva o Background */
+.formacao-bg {
+  background-color: var(--color-1);
+  padding: 6.875rem 0;
+}
+
+/* estilos de formação */
+.formacao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 7.5rem;
+}
+
+.formacao h2 {
+  font-family: var(--family-title);
+  font-weight: bold;
+  font-size: 9rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--color-3);
+  max-width: 23.625rem;
+  word-break: break-all;
+}
+
+.formacao-content > p {
+  font-family: var(--family-text);
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--color-12);
+  margin-bottom: 3.75rem;
+}
+
+/* flutuação das caixas */
+.formacao-itens {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3.75rem;
+}
+
+.formacao-itens-box {
+  padding: 1.25rem 3.75rem 1.25rem 1.25rem;
+  background-color: var(--color-14);
+  max-width: max-content;
+  border-radius: 0.3125rem;
+  position: relative;
+  width: 100%;
+  flex: 1;
+}
+
+.formacao-itens-box::before {
+  content: '';
+  display: inline-block;
+  width: 0.25rem;
+  height: 1.25rem;
+  background: linear-gradient(180deg, var(--color-6) 0%, var(--color-10) 100%);
+  position: absolute;
+  top: 2.5rem;
+  left: -0.25rem;
+}
+
+.formacao-time,
+.formacao-local {
+  font-family: var(--family-text);
+  font-size: 0.875rem;
+  display: block;
+  color: var(--color-12);
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.formacao-local:hover {
+  color: var(--color-10);
+}
+
+.formacao-time {
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+}
+
+.formacao-itens h3 {
+  font-family: var(--family-text);
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: var(--color-2);
+  margin-bottom: 3.125rem;
+}
+
+/* curoso complementares */
+.title-complementares,
+.idioma-title {
+  font-family: var(--family-text);
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: var(--color-13);
+  text-transform: uppercase;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.875rem;
+}
+
+.complementares-itens,
+.idiomas-itens {
+  font-family: var(--family-text);
+  font-size: 1.125rem;
+  line-height: 1.11;
+  color: var(--color-2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.complementares-itens-time,
+.idiomas-itens-nivel {
+  color: var(--color-13);
+}
+
+.complementares p + p {
+  margin-top: 1.25rem;
+}
+
+.idiomas-itens {
+  justify-content: stretch;
+}
+
+.idiomas-itens-nivel {
+  margin-left: 0.6rem;
+}
+
+.complementares {
+  margin-bottom: 3.75rem;
+}
+
+.formacao-content-focus {
+  color: var(--color-2);
+}
+
+/* estilos do responsivo */
+@media (max-width: 63.75rem) {
+  .formacao {
+    gap: 3.75rem;
+  }
+}
+
+@media (max-width: 57.5rem) {
+  .formacao h2 {
+    font-size: 3rem;
+    max-width: max-content;
+    word-break: normal;
+    color: var(--color-2);
+  }
+
+  .formacao {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao-bg {
+    padding: 3.75rem 0;
+  }
+
+  .formacao {
+    gap: 2rem;
+  }
+
+  .formacao-content > p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .formacao-itens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .formacao {
+    gap: 0;
+  }
+
+  .formacao h2 {
+    margin-bottom: 2rem;
+  }
+
+  .formacao-content > p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 28.75rem) {
+  .formacao-itens {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+  }
+
+  .formacao-itens-box {
+    max-width: 100%;
+  }
+
+  .formacao-content > p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}

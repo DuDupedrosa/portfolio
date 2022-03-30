@@ -1,0 +1,134 @@
+/* menu mobile que inicia com display de none e só é ativado
+   quando chega em 800px */
+.menu-mobile {
+  display: none;
+}
+
+/* estilos do header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 1.25rem 5rem 1.25rem;
+}
+
+.header-logo a {
+  font-family: var(--family-title);
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--color-1);
+  text-transform: uppercase;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.header-nav li a {
+  font-family: var(--family-text);
+  font-size: 1.125rem;
+  color: var(--color-1);
+  padding: 0.8rem 0.3rem;
+}
+
+.header-nav li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0.125rem;
+  background-color: var(--color-1);
+  margin-top: 0.25rem;
+  transition: 0.3s;
+}
+
+.header-nav li a:hover::after {
+  width: 100%;
+}
+
+/* estilos do menu mobile */
+@media (max-width: 50rem) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .header-nav-box {
+    grid-row: 1;
+    grid-column: 1;
+    position: relative;
+  }
+
+  /* ativando o menu mobile */
+  .menu-mobile {
+    cursor: pointer;
+    display: block;
+    max-width: max-content;
+  }
+
+  .header-nav {
+    background-color: var(--color-1);
+    position: absolute;
+    z-index: 1;
+    padding: 1rem;
+    border-radius: 0.3125rem;
+    top: 1.875rem;
+    display: none;
+    transition: 0.3s;
+  }
+
+  .header-nav li a {
+    color: var(--color-2);
+    width: 100%;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .header-nav li a:hover::after {
+    width: 0;
+  }
+
+  .header-nav a::before {
+    content: '';
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.25rem;
+    background-color: var(--color-6);
+  }
+
+  .header-nav li + li {
+    margin-top: 0.8rem;
+  }
+
+  /* estilos de interação com o JavaScript */
+  @keyframes show-menu {
+    from {
+      opacity: 0;
+      transform: translate3d(-1.875rem, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  [data-menu='list'].active-menu {
+    display: block;
+    animation: show-menu 0.4s forwards;
+    margin-top: 0.8rem;
+  }
+
+  [data-menu='icon'] {
+    transition: 0.3s;
+  }
+
+  [data-menu='icon'].active-menu {
+    transform: rotate(90deg);
+  }
+}

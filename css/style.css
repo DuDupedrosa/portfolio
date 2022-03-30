@@ -1,0 +1,14 @@
+/* estilos gerais */
+@import url(./global/reset.css);
+@import url(./global/variable.css);
+@import url(./global/header.css);
+@import url(./global/footer.css);
+
+/* introdução */
+@import url(./intro/intro.css);
+
+/* experiencia */
+@import url(./experiencia/experiencia.css);
+
+/* formação */
+@import url(./formacao/formacao.css);
