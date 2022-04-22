@@ -32,7 +32,8 @@
 
 /* flutuação das caixas */
 .formacao-itens {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-bottom: 3.75rem;
 }
@@ -40,11 +41,9 @@
 .formacao-itens-box {
   padding: 1.25rem 3.75rem 1.25rem 1.25rem;
   background-color: var(--color-14);
-  max-width: max-content;
   border-radius: 0.3125rem;
   position: relative;
   width: 100%;
-  flex: 1;
 }
 
 .formacao-itens-box::before {
@@ -168,9 +167,8 @@
   }
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 38.75rem) {
   .formacao-itens {
-    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
