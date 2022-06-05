@@ -1,226 +1,347 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio</title>
+    <meta
+      name="description"
+      content="Eduardo Pedrosa, desenvolvedor front-end."
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio</title>
-  <meta name="description" content="Eduardo Pedrosa, desenvolvedor front-end.">
+    <!-- metas:ogs -->
+    <meta property="og:title" content="Portfólio" />
+    <meta
+      property="og:description"
+      content="Eduardo Pedrosa, desenvolvedor front-end."
+    />
+    <meta property="og:type" content="Website" />
 
-  <!-- metas:ogs -->
-  <meta property="og:title" content="Portfólio">
-  <meta property="og:description" content="Eduardo Pedrosa, desenvolvedor front-end.">
-  <meta property="og:type" content="Website">
+    <!-- fonts externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- fonts externas -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- links css / favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="preload" href="./css/style.min.css" as="style" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
 
-  <!-- links css / favicon -->
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="preload" href="./css/style.min.css" as="style">
-  <link rel="stylesheet" href="./css/style.min.css">
-</head>
-
-<body>
-  <header class="container-main header">
-    <div class="header-logo">
-      <a href="./index.html">Dev</a>
-    </div>
-    <nav class="header-nav-box" aria-label="Navegação primária" data-menu="nav">
-      <div class="menu-mobile" data-menu="button">
-        <img src="./img/icons/menu-mobile.svg" alt="Menu mobile" width="36" height="23" data-menu="icon">
+  <body>
+    <header class="container-main header">
+      <div class="header-logo">
+        <a href="./index.html">Dev</a>
       </div>
-      <ul class="header-nav" data-menu="list">
-        <li>
-          <a href="#experiencia" data-scroll="suave-link">Experiência</a>
-        </li>
-        <li>
-          <a href="#formacao" data-scroll="suave-link">Formação</a>
-        </li>
-        <li>
-          <a href="#contato" data-scroll="suave-link">Contato</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="intro container-main" aria-label="Introdução">
-    <div class="intro-img">
-      <img src="./img/perfil.png" alt="perfil / Eduardo Pedrosa" width="720" height="1061">
-    </div>
-    <div class="intro-content">
-      <h1>Desenvolvedor front end<span class="intro-content-ponto">.</span> </h1>
-      <p>Localizado no Rio de Janeiro 🏖</p>
-    </div>
-  </section>
-
-  <section class="container-main" id="experiencia" aria-label="Experiência">
-    <h2>Experiência</h2>
-    <div class="experiencia-content">
-      <p>Olá, meu nome é Eduardo Pedrosa, tenho 19 anos, venho estudando o desenvolvimento front-end a quase um ano. E Desenvolvo alguns projetos utilizando <strong>HTML, CSS</strong>, <strong>JavaScript</strong> e atualmente estou utilizando o <strong>React js</strong> em meus projetos. Sempre buscando praticar e criar aplicações, para sempre, desenvolver minhas habilidades como um dev.
-      </p>
-      <div class="experiencia-projeto">
-        <div class="experiencia-projeto-text">
-          <h3>Radar-Covid</h3>
-          <p>Este foi meu segundo projeto utilizando o React js, sempre buscando colocar em prática meus conhecimentos. Este projeto teve como objetivo utilizar uma biblioteca de gráfico juntamento com api, e trazer algumas informações do COVID-19 para o usuário e também deixando um campo de busca, que utiliza uma api, para trazer informações sobre o COVID-19 do estado digitado.</p>
+      <nav
+        class="header-nav-box"
+        aria-label="Navegação primária"
+        data-menu="nav"
+      >
+        <div class="menu-mobile" data-menu="button">
+          <img
+            src="./img/icons/menu-mobile.svg"
+            alt="Menu mobile"
+            width="36"
+            height="23"
+            data-menu="icon"
+          />
         </div>
-        <div class="experiencia-linguagens">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>React</span>
-          <span>Victory</span>
-        </div>
-        <div class="link-projeto">
-          <h3>Link para o projeto:</h3>
-          <a href="https://radar-covid.vercel.app/" target="_blanck">https://radar-covid.vercel.app/</a>
-        </div>
-      </div>
-      <div class="experiencia-projeto">
-        <div class="experiencia-projeto-text">
-          <h3>Camp-In</h3>
-          <p>Este foi meu primeiro projeto após, o termino do curso de React js. O objetivo foi criar um painel de login, totalmente funcional, com todas as funcionalidades, por isso a home page é simples, pois todo o foco foi em colocar o modal de login em funcionamento, lidando com api e verificações a todo momento.
-          </p>
-        </div>
-        <div class="experiencia-linguagens">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>React</span>
-        </div>
-        <div class="link-projeto">
-          <h3>Link para o projeto:</h3>
-          <a href="https://camp-in.vercel.app/" target="_blanck">https://camp-in.vercel.app/</a>
-        </div>
-      </div>
-      <div class="experiencia-projeto">
-        <div class="experiencia-projeto-text">
-          <h3>Bikcraft</h3>
-          <p>O projeto bikcraft foi um dos maiores desafios dos meus estudos, pois é o maior e o mais completo, que já fiz. Sempre fazendo o código totalmente do zero,
-            sem adições de plugins.
-          </p>
-        </div>
-        <div class="experiencia-linguagens">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-        <div class="link-projeto">
-          <h3>Link para o projeto:</h3>
-          <a href="https://dudupedrosa.github.io/bikcraft/" target="_blanck">dudupedrosa.github.io/bikcraft/</a>
-        </div>
-      </div>
-      <div class="more-projects">
-        <button data-show="more-projects-button-open">Todos os projetos</button>
-        <ul class="more-projects-itens" data-show="more-projects-itens">
-          <button class="button-fechar-projects" data-show="more-projects-button-close">
-            <img src="./img/icons/close-icon.svg" alt="">
-          </button>
+        <ul class="header-nav" data-menu="list">
           <li>
-            <h3>Rocket-Nfts</h3>
-            <a href="https://dudupedrosa.github.io/web-nfts/" target="_blanck">dudupedrosa.github.io/web-nfts/</a>
+            <a href="#experiencia" data-scroll="suave-link">Experiência</a>
           </li>
           <li>
-            <h3>Film-Flix</h3>
-            <a href="https://dudupedrosa.github.io/FilmFlix/" target="_blanck">dudupedrosa.github.io/FilmFlix/</a>
+            <a href="#formacao" data-scroll="suave-link">Formação</a>
           </li>
           <li>
-            <h3>Receitas Blog</h3>
-            <a href="https://dudupedrosa.github.io/receitas-blog/" target="_blanck">dudupedrosa.github.io/receitas-blog/</a>
-          </li>
-          <li>
-            <h3>Web-Shoes</h3>
-            <a href="https://dudupedrosa.github.io/Web-Shoes/" target="_blanck">dudupedrosa.github.io/Web-Shoes/</a>
-          </li>
-          <li>
-            <h3>Dev-Blog</h3>
-            <a href="https://dudupedrosa.github.io/DevBlog/" target="_blanck">dudupedrosa.github.io/DevBlog/</a>
-          </li>
-          <li>
-            <h3>web-coffee</h3>
-            <a href="https://dudupedrosa.github.io/web-coffee/" target="_blanck">dudupedrosa.github.io/web-coffee/</a>
-          </li>
-          <li>
-            <h3>min-calc</h3>
-            <a href="https://dudupedrosa.github.io/min-calc/" target="_blanck">dudupedrosa.github.io/min-calc/</a>
-          </li>
-          <li>
-            <h3>Tigre Blog</h3>
-            <a href="https://dudupedrosa.github.io/tigre-blog/" target="_blanck">dudupedrosa.github.io/tigre-blog/</a>
+            <a href="#contato" data-scroll="suave-link">Contato</a>
           </li>
         </ul>
-      </div>
-    </div>
-  </section>
+      </nav>
+    </header>
 
-  <section class="formacao-bg" id="formacao" aria-label="Formação">
-    <div class="container-main formacao">
-      <h2>Formação</h2>
-      <div class="formacao-content">
-        <p>Minha mais recente formação, foi o término do curso de <span class="formacao-content-focus">React Js</span> completo🎓, que fiz na origamid. Além disso também tenho alguns cursos concluídos, sempre buscando cursos complementares e estar sempre atualizado, sobre as informações.
-          No momento estou praticando, e criando aplicações com o React js, e colocando meu conhecimento em prática.
+    <section class="intro container-main" aria-label="Introdução">
+      <div class="intro-img">
+        <img
+          src="./img/perfil.png"
+          alt="perfil / Eduardo Pedrosa"
+          width="720"
+          height="1061"
+        />
+      </div>
+      <div class="intro-content">
+        <h1>
+          Desenvolvedor front end<span class="intro-content-ponto">.</span>
+        </h1>
+        <p>Localizado no Rio de Janeiro 🏖</p>
+      </div>
+    </section>
+
+    <section class="container-main" id="experiencia" aria-label="Experiência">
+      <h2>Experiência</h2>
+      <div class="experiencia-content">
+        <p>
+          Olá, meu nome é Eduardo Pedrosa, tenho 20 anos, venho estudando o
+          desenvolvimento front-end a mais de um ano. E Desenvolvo alguns
+          projetos utilizando <strong>HTML, CSS</strong>,
+          <strong>JavaScript</strong>, <strong>React js</strong> e atualmente
+          estou utilizando o <strong>Vue.js</strong> em meus projetos. Sempre
+          buscando praticar e criar aplicações, para sempre, desenvolver minhas
+          habilidades como um dev.
         </p>
-        <ul class="formacao-itens">
-          <li class="formacao-itens-box">
-            <span class="formacao-time">22H</span>
-            <h3>Web design completo</h3>
-            <a href="https://www.origamid.com/" target="_blank" class="formacao-local">origamid.com</a>
-          </li>
-          <li class="formacao-itens-box">
-            <span class="formacao-time">23H</span>
-            <h3>HTML e CSS para iniciantes</h3>
-            <a href="https://www.origamid.com/" target="_blank" class="formacao-local">origamid.com</a>
-          </li>
-          <li class="formacao-itens-box formacao-java-script">
-            <span class="formacao-time">37H</span>
-            <h3>JavaScript Completo ES6</h3>
-            <a href="https://www.origamid.com/" target="_blank" class="formacao-local">origamid.com</a>
-          </li>
-          <li class="formacao-itens-box formacao-react">
-            <span class="formacao-time">18H</span>
-            <h3>React js completo</h3>
-            <a href="https://www.origamid.com/" target="_blank" class="formacao-local">origamid.com</a>
-          </li>
-        </ul>
-
-        <div class="complementares">
-          <span class="title-complementares">
-            <img src="./img/icons/icon-book.svg" alt="">
-            Cursos complementares
-          </span>
-          <p class="complementares-itens">Css flexbox <span class="complementares-itens-time">3H</span></p>
-          <p class="complementares-itens">Css Grid Layout <span class="complementares-itens-time">5H</span></p>
+        <div class="experiencia-projeto">
+          <div class="experiencia-projeto-text">
+            <h3>Radar-Covid</h3>
+            <p>
+              Este foi meu segundo projeto utilizando o React js, sempre
+              buscando colocar em prática meus conhecimentos. Este projeto teve
+              como objetivo utilizar uma biblioteca de gráfico juntamento com
+              api, e trazer algumas informações do COVID-19 para o usuário e
+              também deixando um campo de busca, que utiliza uma api, para
+              trazer informações sobre o COVID-19 do estado digitado.
+            </p>
+          </div>
+          <div class="experiencia-linguagens">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Victory</span>
+          </div>
+          <div class="link-projeto">
+            <h3>Link para o projeto:</h3>
+            <a href="https://radar-covid.vercel.app/" target="_blank"
+              >https://radar-covid.vercel.app/</a
+            >
+          </div>
         </div>
-        <div class="idiomas">
-          <span class="idioma-title">
-            <img src="./img/icons/icon-idioma.svg" alt="">
-            idiomas
-          </span>
-          <p class="idiomas-itens">Inglês <span class="idiomas-itens-nivel"> / Junior</span></p>
+        <div class="experiencia-projeto">
+          <div class="experiencia-projeto-text">
+            <h3>Camp-In</h3>
+            <p>
+              Este foi meu primeiro projeto após, o termino do curso de React
+              js. O objetivo foi criar um painel de login, totalmente funcional,
+              com todas as funcionalidades, por isso a home page é simples, pois
+              todo o foco foi em colocar o modal de login em funcionamento,
+              lidando com api e verificações a todo momento.
+            </p>
+          </div>
+          <div class="experiencia-linguagens">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+          </div>
+          <div class="link-projeto">
+            <h3>Link para o projeto:</h3>
+            <a href="https://camp-in.vercel.app/" target="_blank"
+              >https://camp-in.vercel.app/</a
+            >
+          </div>
+        </div>
+        <div class="experiencia-projeto">
+          <div class="experiencia-projeto-text">
+            <h3>Loto-Checked</h3>
+            <p>
+              Este projeto, foi o primeiro feito, após o termino da teoria do
+              curo de vue.js, antes de entrar ao módulo prático, decidi me
+              desafiar e desenvolver este projeto. Agora sigo com os estudos no
+              vue.js, terminado o módulo prático, para poder, construir um
+              projeto mais robusto com o vue.js.
+            </p>
+          </div>
+          <div class="experiencia-linguagens">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Vue.js</span>
+          </div>
+          <div class="link-projeto">
+            <h3>Link para o projeto:</h3>
+            <a href="https://loto-checked.vercel.app/" target="_blank"
+              >https://loto-checked.vercel.app/</a
+            >
+          </div>
+        </div>
+        <div class="more-projects">
+          <button data-show="more-projects-button-open">
+            Todos os projetos
+          </button>
+          <ul class="more-projects-itens" data-show="more-projects-itens">
+            <button
+              class="button-fechar-projects"
+              data-show="more-projects-button-close"
+            >
+              <img src="./img/icons/close-icon.svg" alt="" />
+            </button>
+            <li>
+              <h3>Bikcraft</h3>
+              <a href="https://dudupedrosa.github.io/bikcraft/" target="_blank"
+                >dudupedrosa.github.io/bikcraft/</a
+              >
+            </li>
+            <li>
+              <h3>Rocket-Nfts</h3>
+              <a href="https://dudupedrosa.github.io/web-nfts/" target="_blank"
+                >dudupedrosa.github.io/web-nfts/</a
+              >
+            </li>
+            <li>
+              <h3>Film-Flix</h3>
+              <a href="https://dudupedrosa.github.io/FilmFlix/" target="_blank"
+                >dudupedrosa.github.io/FilmFlix/</a
+              >
+            </li>
+            <li>
+              <h3>Receitas Blog</h3>
+              <a
+                href="https://dudupedrosa.github.io/receitas-blog/"
+                target="_blank"
+                >dudupedrosa.github.io/receitas-blog/</a
+              >
+            </li>
+            <li>
+              <h3>Web-Shoes</h3>
+              <a href="https://dudupedrosa.github.io/Web-Shoes/" target="_blank"
+                >dudupedrosa.github.io/Web-Shoes/</a
+              >
+            </li>
+            <li>
+              <h3>Dev-Blog</h3>
+              <a href="https://dudupedrosa.github.io/DevBlog/" target="_blank"
+                >dudupedrosa.github.io/DevBlog/</a
+              >
+            </li>
+            <li>
+              <h3>web-coffee</h3>
+              <a
+                href="https://dudupedrosa.github.io/web-coffee/"
+                target="_blank"
+                >dudupedrosa.github.io/web-coffee/</a
+              >
+            </li>
+            <li>
+              <h3>min-calc</h3>
+              <a href="https://dudupedrosa.github.io/min-calc/" target="_blank"
+                >dudupedrosa.github.io/min-calc/</a
+              >
+            </li>
+            <li>
+              <h3>Tigre Blog</h3>
+              <a
+                href="https://dudupedrosa.github.io/tigre-blog/"
+                target="_blank"
+                >dudupedrosa.github.io/tigre-blog/</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer-bg" id="contato" aria-label="Contato">
-    <div class="container-main footer">
-      <p class="footer-text">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
-      <ul class="footer-contato">
-        <li>
-          <span>eduardobaptista66@gmail.com</span>
-        </li>
-        <li>
-          <a href="tel:+5521971956764">+55 21 97195-6764</a>
-        </li>
-      </ul>
-      <p class="footer-direitos">Dev&copy; todos os direitos reservados</p>
-    </div>
-  </footer>
+    <section class="formacao-bg" id="formacao" aria-label="Formação">
+      <div class="container-main formacao">
+        <h2>Formação</h2>
+        <div class="formacao-content">
+          <p>
+            Minha mais recente formação, foi o término do curso de
+            <span class="formacao-content-focus">React Js</span> completo🎓, que
+            fiz na origamid. Além disso também tenho alguns cursos concluídos,
+            sempre buscando cursos complementares e estar sempre atualizado,
+            sobre as informações. No momento estou praticando, e criando
+            aplicações com o React js, e colocando meu conhecimento em prática.
+          </p>
+          <ul class="formacao-itens">
+            <li class="formacao-itens-box">
+              <span class="formacao-time">22H</span>
+              <h3>Web design completo</h3>
+              <a
+                href="https://www.origamid.com/"
+                target="_blank"
+                class="formacao-local"
+                >origamid.com</a
+              >
+            </li>
+            <li class="formacao-itens-box">
+              <span class="formacao-time">23H</span>
+              <h3>HTML e CSS para iniciantes</h3>
+              <a
+                href="https://www.origamid.com/"
+                target="_blank"
+                class="formacao-local"
+                >origamid.com</a
+              >
+            </li>
+            <li class="formacao-itens-box formacao-java-script">
+              <span class="formacao-time">37H</span>
+              <h3>JavaScript Completo ES6</h3>
+              <a
+                href="https://www.origamid.com/"
+                target="_blank"
+                class="formacao-local"
+                >origamid.com</a
+              >
+            </li>
+            <li class="formacao-itens-box formacao-react">
+              <span class="formacao-time">18H</span>
+              <h3>React js completo</h3>
+              <a
+                href="https://www.origamid.com/"
+                target="_blank"
+                class="formacao-local"
+                >origamid.com</a
+              >
+            </li>
+          </ul>
 
-  <script src="./main.js"></script>
-</body>
+          <div class="complementares">
+            <span class="title-complementares">
+              <img src="./img/icons/icon-book.svg" alt="" />
+              Cursos complementares
+            </span>
+            <p class="complementares-itens">
+              Css flexbox <span class="complementares-itens-time">3H</span>
+            </p>
+            <p class="complementares-itens">
+              Css Grid Layout <span class="complementares-itens-time">5H</span>
+            </p>
+          </div>
+          <div class="idiomas">
+            <span class="idioma-title">
+              <img src="./img/icons/icon-idioma.svg" alt="" />
+              idiomas
+            </span>
+            <p class="idiomas-itens">
+              Inglês <span class="idiomas-itens-nivel"> / Junior</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <footer class="footer-bg" id="contato" aria-label="Contato">
+      <div class="container-main footer">
+        <p class="footer-text">
+          Estou disponível para novos projetos no momento. Entre em contato
+          comigo e marcamos uma conversa 👋
+        </p>
+        <ul class="footer-contato">
+          <li>
+            <span>eduardobaptista66@gmail.com</span>
+          </li>
+          <li>
+            <a href="tel:+5521971956764">+55 21 97195-6764</a>
+          </li>
+        </ul>
+        <p class="footer-direitos">Dev&copy; todos os direitos reservados</p>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
