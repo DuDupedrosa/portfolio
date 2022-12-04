@@ -28,8 +28,18 @@
 
     <!-- links css / favicon -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="preload" href="./css/style.min.css" as="style" />
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- links para o slide funcionar -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
   </head>
 
   <body>
@@ -82,99 +92,200 @@
       </div>
     </section>
 
-    <section class="container-main" id="experiencia" aria-label="Experiência">
-      <h2>Experiência</h2>
-      <div class="experiencia-content">
-        <p>
-          Olá, meu nome é Eduardo Pedrosa, tenho 20 anos, venho estudando o
-          desenvolvimento front-end a mais de um ano. E Desenvolvo alguns
-          projetos utilizando <strong>HTML, CSS</strong>,
-          <strong>JavaScript</strong>, <strong>React js</strong> e
-          <strong>Vue.js</strong>. <br />
-          No momento estou trabalhando, como estagiário, na
-          <a
-            href="https://www.dxainvest.com/"
-            target="_blank"
-            class="company_name"
-            >DXA invest</a
-          >
-          , no setor de desenvolvimento front-end. Sigo com os estudos e
-          praticando, diariamente.
-        </p>
-        <div class="experiencia-projeto">
-          <div class="experiencia-projeto-text">
-            <h3>Radar-Covid</h3>
-            <p>
-              Este foi meu segundo projeto utilizando o React js, sempre
-              buscando colocar em prática meus conhecimentos. Este projeto teve
-              como objetivo utilizar uma biblioteca de gráfico juntamento com
-              api, e trazer algumas informações do COVID-19 para o usuário e
-              também deixando um campo de busca, que utiliza uma api, para
-              trazer informações sobre o COVID-19 do estado digitado.
-            </p>
-          </div>
-          <div class="experiencia-linguagens">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Victory</span>
-          </div>
-          <div class="link-projeto">
-            <h3>Link para o projeto:</h3>
-            <a href="https://radar-covid.vercel.app/" target="_blank"
-              >https://radar-covid.vercel.app/</a
+    <section class="container-main experiencia" aria-label="Experiência">
+      <div id="experiencia">
+        <h2>Experiência</h2>
+        <div>
+          <p>
+            Olá, meu nome é Eduardo Pedrosa, tenho 20 anos, venho estudando o
+            desenvolvimento front-end a mais de um ano. E Desenvolvo alguns
+            projetos utilizando <strong>HTML, CSS</strong>,
+            <strong>JavaScript</strong>, <strong>React js</strong> e
+            <strong>Vue.js</strong>. <br />
+            Logo abaixo você pode conferir alguns dos meus projetos:
+          </p>
+          <p>
+            No momento estou trabalhando, como estagiário, na
+            <a
+              href="https://www.dxainvest.com/"
+              target="_blank"
+              class="company_name"
+              >DXA invest</a
             >
+            , no setor de desenvolvimento front-end. Sigo com os estudos e
+            praticando, diariamente.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide grid_slide_item">
+                <!-- radar-covid -->
+                <div class="experiencia-projeto">
+                  <div class="experiencia-projeto-text">
+                    <h3>Radar-Covid</h3>
+                    <p>
+                      Este foi meu segundo projeto utilizando o React js, sempre
+                      buscando colocar em prática meus conhecimentos. Este
+                      projeto teve como objetivo utilizar uma biblioteca de
+                      gráfico juntamento com api, e trazer algumas informações
+                      do COVID-19 para o usuário e também deixando um campo de
+                      busca, que utiliza uma api, para trazer informações sobre
+                      o COVID-19 do estado digitado.
+                    </p>
+                  </div>
+                  <div class="experiencia-linguagens">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Victory</span>
+                  </div>
+                  <div class="link-projeto">
+                    <h3>Link para o projeto:</h3>
+                    <a href="https://radar-covid.vercel.app/" target="_blank"
+                      >https://radar-covid.vercel.app/</a
+                    >
+                  </div>
+                </div>
+                <!-- barber-hub -->
+                <div class="experiencia-projeto">
+                  <div class="experiencia-projeto-text">
+                    <h3>
+                      barber-hub
+                      <span class="project-in-progress">In Progress</span>
+                    </h3>
+                    <p>
+                      Projeto desenvolvido com Next.js + TypeScript, ainda está
+                      em desenvolvimento, tem por objetivo colocar o
+                      conhecimento em prática e desenvolver um projeto completo
+                      utilizando o Next.js com o TypeScript, também estou
+                      utilizando o chakra-ui, sendo a primeira vez que utilizo
+                      ele em um projeto. Então está sendo um projeto bem bacana
+                      de fazer, pois estou aprendendo a lidar com novas
+                      tecnologias e expandindo meu conhecimento, no
+                      desenvolvimento front-end.
+                    </p>
+                  </div>
+                  <div class="experiencia-linguagens">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Next.js</span>
+                    <span>TypeScript</span>
+                    <span>Chakra-ui</span>
+                    <span>Styled-components</span>
+                  </div>
+                  <div class="link-projeto">
+                    <h3>Link para o projeto:</h3>
+                    <a href="https://barber-hub.vercel.app/" target="_blank"
+                      >https://barber-hub.vercel.app/</a
+                    >
+                  </div>
+                </div>
+                <!-- rocket-list -->
+                <div class="experiencia-projeto">
+                  <div class="experiencia-projeto-text">
+                    <h3>Rocket-List</h3>
+                    <p>
+                      Projeto desenvolvido com react, foi um projeto que teve
+                      por objetivo manter os conhecimentos em react, pois estava
+                      utilizando bastante o vue no dia a dia, aproveitei para
+                      aprimorar meus conhecimentos e desenvolvi o projeto
+                      utilizando vite e TypeScript, sendo meu primeiro projeto
+                      utilizando TypeScript. Também foi um projeto, que
+                      aproveitei, para implementar os testes E2E, com o cypress,
+                      sendo o meu primeiro projeto, a ter um fluxo completo de
+                      testes automatizados, escrito totalmente do zero.
+                    </p>
+                  </div>
+                  <div class="experiencia-linguagens">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Vite</span>
+                    <span>TypeScript</span>
+                    <span>Styled-components</span>
+                    <span>Cypress</span>
+                  </div>
+                  <div class="link-projeto">
+                    <h3>Link para o projeto:</h3>
+                    <a href="https://rocket-list.vercel.app/" target="_blank"
+                      >https://rocket-list.vercel.app/</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide grid_slide_item">
+                <!-- camp-in -->
+                <div class="experiencia-projeto">
+                  <div class="experiencia-projeto-text">
+                    <h3>Camp-In</h3>
+                    <p>
+                      Este foi meu primeiro projeto após, o termino do curso de
+                      React js. O objetivo foi criar um painel de login,
+                      totalmente funcional, com todas as funcionalidades, por
+                      isso a home page é simples, pois todo o foco foi em
+                      colocar o modal de login em funcionamento, lidando com api
+                      e verificações a todo momento.
+                    </p>
+                  </div>
+                  <div class="experiencia-linguagens">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                  </div>
+                  <div class="link-projeto">
+                    <h3>Link para o projeto:</h3>
+                    <a href="https://camp-in.vercel.app/" target="_blank"
+                      >https://camp-in.vercel.app/</a
+                    >
+                  </div>
+                </div>
+                <!-- loto-checked -->
+                <div class="experiencia-projeto">
+                  <div class="experiencia-projeto-text">
+                    <h3>Loto-Checked</h3>
+                    <p>
+                      Este projeto, foi o primeiro feito, após o termino da
+                      teoria do curo de vue.js, antes de entrar ao módulo
+                      prático, decidi me desafiar e desenvolver este projeto.
+                      Agora sigo com os estudos no vue.js, terminado o módulo
+                      prático, para poder, construir um projeto mais robusto com
+                      o vue.js.
+                    </p>
+                  </div>
+                  <div class="experiencia-linguagens">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Vue.js</span>
+                  </div>
+                  <div class="link-projeto">
+                    <h3>Link para o projeto:</h3>
+                    <a href="https://loto-checked.vercel.app/" target="_blank"
+                      >https://loto-checked.vercel.app/</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows slide_buttons" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir=">">
+              >
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir="<">
+              <
+            </button>
           </div>
         </div>
-        <div class="experiencia-projeto">
-          <div class="experiencia-projeto-text">
-            <h3>Camp-In</h3>
-            <p>
-              Este foi meu primeiro projeto após, o termino do curso de React
-              js. O objetivo foi criar um painel de login, totalmente funcional,
-              com todas as funcionalidades, por isso a home page é simples, pois
-              todo o foco foi em colocar o modal de login em funcionamento,
-              lidando com api e verificações a todo momento.
-            </p>
-          </div>
-          <div class="experiencia-linguagens">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
-          </div>
-          <div class="link-projeto">
-            <h3>Link para o projeto:</h3>
-            <a href="https://camp-in.vercel.app/" target="_blank"
-              >https://camp-in.vercel.app/</a
-            >
-          </div>
-        </div>
-        <div class="experiencia-projeto">
-          <div class="experiencia-projeto-text">
-            <h3>Loto-Checked</h3>
-            <p>
-              Este projeto, foi o primeiro feito, após o termino da teoria do
-              curo de vue.js, antes de entrar ao módulo prático, decidi me
-              desafiar e desenvolver este projeto. Agora sigo com os estudos no
-              vue.js, terminado o módulo prático, para poder, construir um
-              projeto mais robusto com o vue.js.
-            </p>
-          </div>
-          <div class="experiencia-linguagens">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Vue.js</span>
-          </div>
-          <div class="link-projeto">
-            <h3>Link para o projeto:</h3>
-            <a href="https://loto-checked.vercel.app/" target="_blank"
-              >https://loto-checked.vercel.app/</a
-            >
-          </div>
-        </div>
+
         <div class="more-projects">
           <button data-show="more-projects-button-open">
             Todos os projetos
@@ -257,14 +368,16 @@
         <div class="formacao-content">
           <p>
             Minha mais recente formação, foi o término do curso de
-            <span class="formacao-content-focus">Vue.js</span> completo🎓, que
-            fiz na origamid. Além disso também tenho alguns cursos concluídos,
-            sempre buscando cursos complementares e estar sempre atualizado.
+            <span class="formacao-content-focus">TypeScript</span>
+            completo🎓, que fiz na origamid e também finalizei alguns estudos,
+            para poder utilizar os
+            <span class="formacao-content-focus">testes E2E</span>, com o
+            cypress. Além disso também tenho alguns cursos concluídos, sempre
+            buscando cursos complementares e estar sempre atualizado.
             <br />
-            No momento estou praticando, e iniciando os estudos em
-            <span class="formacao-content-focus">TypeScript</span>. E também,
-            iniciei minha <span class="formacao-content-focus">graduação</span>,
-            em análise e desenvolvimento de sistemas.
+            No momento estou praticando, e iniciando os estudos no
+            desenvolvimento
+            <span class="formacao-content-focus">Back-end.</span>
           </p>
           <ul class="formacao-itens">
             <li class="formacao-itens-box">
@@ -321,6 +434,114 @@
 
           <div class="complementares">
             <span class="title-complementares">
+              <img
+                src="./img/icons/microchip-solid-fg.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+              Tecnologias
+            </span>
+            <ul class="tecnologias-list">
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  width="20"
+                  height="20"
+                />
+                Html
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  width="20"
+                  height="20"
+                />
+                Css
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  width="20"
+                  height="20"
+                />
+                JavaScript
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  width="20"
+                  height="20"
+                />
+                React
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  width="20"
+                  height="20"
+                />
+                TypeScript
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                  width="20"
+                  height="20"
+                />
+                Vue.js
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  width="20"
+                  height="20"
+                />
+                Git
+              </li>
+              <li>
+                <img src="./img/sc.png" width="20" height="20" />
+                Styled-Components
+              </li>
+              <li>
+                <svg viewBox="0 0 128 128" width="20" height="20">
+                  <path
+                    d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+                Next.js
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg"
+                  width="20"
+                  height="20"
+                />
+                Vuetify
+              </li>
+              <li>
+                <img
+                  src="./img/chackra.png"
+                  alt="Chakra logo"
+                  width="20"
+                  height="20"
+                />
+                Chakra-ui
+              </li>
+              <li>
+                <img
+                  src="./img/cy-png-1.png"
+                  alt="Chakra logo"
+                  width="20"
+                  height="20"
+                />
+                Cypress
+              </li>
+            </ul>
+          </div>
+          <div class="complementares">
+            <span class="title-complementares">
               <img src="./img/icons/icon-book.svg" alt="" />
               Cursos complementares
             </span>
@@ -363,5 +584,18 @@
     </footer>
 
     <script src="./main.js"></script>
+
+    <!-- script para o slide -->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script>
+      new Glide('.glide', {
+        type: 'carousel',
+        perView: 1,
+        autoplay: 5000,
+        hoverPause: true,
+        keyboard: true,
+        animationDuration: 1000,
+      }).mount();
+    </script>
   </body>
 </html>
