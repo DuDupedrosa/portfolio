@@ -32,14 +32,14 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <!-- links para o slide funcionar -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css"
     />
     <link
       rel="stylesheet"
       href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
-    />
+    /> -->
   </head>
 
   <body>
@@ -118,10 +118,13 @@
         </div>
       </div>
       <div>
-        <div class="glide">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide grid_slide_item">
+        <div class="slide_container">
+          <div>
+            <ul>
+              <li
+                class="grid_slide_item grid_slide_item-default"
+                data-slide="item-start"
+              >
                 <!-- radar-covid -->
                 <div class="experiencia-projeto">
                   <div class="experiencia-projeto-text">
@@ -220,7 +223,7 @@
                   </div>
                 </div>
               </li>
-              <li class="glide__slide grid_slide_item">
+              <li class="grid_slide_item" data-slide="item-end">
                 <!-- camp-in -->
                 <div class="experiencia-projeto">
                   <div class="experiencia-projeto-text">
@@ -276,13 +279,9 @@
               </li>
             </ul>
           </div>
-          <div class="glide__arrows slide_buttons" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir=">">
-              >
-            </button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir="<">
-              <
-            </button>
+          <div class="slide_buttons">
+            <button data-slide="button-prev"><</button>
+            <button data-slide="button-next">></button>
           </div>
         </div>
 
@@ -588,14 +587,33 @@
 </html>
 
 <!-- script para o slide -->
-<script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<!-- <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
 <script>
-  new Glide('.glide', {
-    type: 'carousel',
-    perView: 1,
-    autoplay: 5000,
-    hoverPause: true,
-    keyboard: true,
-    animationDuration: 1000,
-  }).mount();
+  // new Glide('.glide', {
+  //   type: 'carousel',
+  //   perView: 1,
+  //   autoplay: 5000,
+  //   hoverPause: true,
+  //   keyboard: true,
+  //   animationDuration: 1000,
+  // }).mount();
+
+  const buttonPrev = document.querySelector("[data-slide='button-prev']");
+  const buttonNext = document.querySelector("[data-slide='button-next']");
+  const slideStart = document.querySelector("[data-slide='item-start']");
+  const slideEnd = document.querySelector("[data-slide='item-end']");
+
+  buttonPrev.addEventListener('click', handlePrevSLide);
+  buttonNext.addEventListener('click', handleNextSlide);
+
+  function handlePrevSLide() {
+    slideStart.classList.add('grid_slide_item-default');
+    slideEnd.classList.remove('grid_slide_item_end');
+  }
+
+  function handleNextSlide() {
+    slideStart.classList.remove('grid_slide_item-default');
+    slideEnd.classList.add('grid_slide_item_end');
+    window.scrollTo(0, 1000);
+  }
 </script>
