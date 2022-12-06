@@ -264,6 +264,12 @@
   display: grid;
 }
 
+.partner-link {
+  color: var(--color-6);
+  text-decoration: underline;
+  font-family: inherit;
+}
+
 /* responsivo do menu close */
 @media (max-width: 26.25rem) {
   .button-fechar-projects img {
