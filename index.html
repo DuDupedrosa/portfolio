@@ -18,6 +18,20 @@
     />
     <meta property="og:type" content="Website" />
 
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script> -->
+
     <!-- fonts externas -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,15 +45,11 @@
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- links para o slide funcionar -->
-    <!-- <link
-      rel="stylesheet"
-      href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css"
-    />
+    <!-- link estilos do glider -->
     <link
       rel="stylesheet"
-      href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
-    /> -->
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -96,241 +106,288 @@
       <div id="experiencia">
         <h2>Experiência</h2>
         <div>
-          <p>
-            Olá, meu nome é Eduardo Pedrosa, tenho 20 anos, venho estudando o
-            desenvolvimento front-end a quase dois anos. E Desenvolvo alguns
+          <p class="text">
+            Olá, meu nome é Eduardo Pedrosa, tenho 21 anos, venho estudando o
+            desenvolvimento front-end a mais de dois anos. E Desenvolvo alguns
             projetos utilizando <strong>HTML, CSS</strong>,
             <strong>JavaScript</strong>, <strong>React js</strong> e
             <strong>Vue.js</strong>. <br />
             No momento também desenvolvo alguns projetos back-end, utilizando o
             <strong>Node.js</strong> e o <strong>Nest.js</strong> como
-            frameWork, desse forma, tenha mais liberdade, para construir, meus
+            frameWork, desse forma, tenho mais liberdade, para construir, meus
             projetos front-end.
             <br />
-            <span style="margin-top: 8px; display: block"
-              >Logo abaixo você pode conferir alguns dos meus projetos:</span
+            <span class="check-links-desktop mt-5 font-medium"
+              >Logo abaixo você pode conferir alguns dos meus projetos! 😉</span
             >
           </p>
-          <p>
-            No momento estou trabalhando, como estagiário, na
+          <p class="max-w-[520px] text">
+            No momento <strong>finalizei</strong> um estágio de 1 ano e 2 meses,
+            na
             <a
               href="https://www.dxainvest.com/"
               target="_blank"
               class="company_name"
               >DXA invest</a
             >
-            , no setor de desenvolvimento front-end. Sigo com os estudos e
-            praticando, diariamente.
+            , no setor de desenvolvimento front-end.
+            <strong>Fui promovido a desenvolvedor front-end</strong> e agora
+            trabalho em <strong>período integral</strong>. Participando
+            diretamente do Desenvolvimento de aplicativos da web e nativos.
+            <span class="check-links-mobile mt-5 font-medium"
+              >Logo abaixo você pode conferir alguns dos meus projetos! 😉</span
+            >
           </p>
         </div>
       </div>
       <div>
-        <div class="slide_container">
-          <div>
-            <ul>
-              <li
-                class="grid_slide_item grid_slide_item-default"
-                data-slide="item-start"
-              >
-                <!-- task-hub -->
-                <div class="experiencia-projeto">
-                  <div class="experiencia-projeto-text">
-                    <h3>
-                      task-hub
-                      <span class="project-in-progress">In Progress</span>
-                    </h3>
-                    <p>
-                      Projeto desenvolvido com Next.js + TypeScript, esse é meu
-                      primeiro projeto aonde eu desenvolvo tanto o front-end
-                      quanto o back-end da aplicação, utilizei o Nest.js como
-                      frameWork do Node.js, como banco de dados eu utilizei o
-                      mongoDB. Foi um projeto aonde deu para pegar bastante
-                      conhecimento tanto no front quanto no back, pois utilizei
-                      algumas ferramentas novas, como o tailwindcss,
-                      react-query, Chakra-ui, pelo lado do front. E
-                      principalmente para o lado do back-end, pois foi o meu
-                      primeiro projeto aonde eu desenvolvo o back-end da
-                      aplicação, do zero.
-                    </p>
-                  </div>
+        <div class="swiper swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="experiencia-projeto">
+                <div class="experiencia-projeto-text">
+                  <h3>
+                    task-hub
+                    <span class="project-in-progress">In Progress</span>
+                  </h3>
+                  <p>
+                    Projeto desenvolvido com Next.js + TypeScript, esse é meu
+                    primeiro projeto aonde eu desenvolvo tanto o front-end
+                    quanto o back-end da aplicação, utilizei o Nest.js como
+                    frameWork do Node.js, como banco de dados eu utilizei o
+                    mongoDB. Foi um projeto aonde deu para pegar bastante
+                    conhecimento tanto no front quanto no back, pois utilizei
+                    algumas ferramentas novas, como o tailwindcss, react-query,
+                    Chakra-ui, pelo lado do front. E principalmente para o lado
+                    do back-end, pois foi o meu primeiro projeto aonde eu
+                    desenvolvo o back-end da aplicação, do zero.
+                  </p>
+                </div>
 
-                  <div class="experiencia-linguagens">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>React</span>
-                    <span>Next.js</span>
-                    <span>TypeScript</span>
-                    <span>Chakra-ui</span>
-                    <span>Tailwindcss</span>
-                    <span>react-query</span>
-                    <span>node.js</span>
-                    <span>nest.js</span>
-                    <span>mongoDB</span>
-                  </div>
-                  <div class="link-projeto">
-                    <h3>Link para o projeto:</h3>
-                    <a href="https://my-tasks-front.vercel.app/" target="_blank"
-                      >https://my-tasks-front.vercel.app/</a
-                    >
-                  </div>
+                <div class="experiencia-linguagens">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>Chakra-ui</span>
+                  <span>Tailwindcss</span>
+                  <span>react-query</span>
+                  <span>node.js</span>
+                  <span>nest.js</span>
+                  <span>mongoDB</span>
                 </div>
-                <!-- placa-mais -->
-                <div class="experiencia-projeto">
-                  <div class="experiencia-projeto-text">
-                    <h3>Placa mais</h3>
-                    <p>
-                      Projeto Freelancer, desenvolvido para a empresa Placa
-                      Mais, que tem por objeto consultar informações completas
-                      de acordo com cada veículo. Todo o front foi feito
-                      totalmente do zero, onde tive acesso a um design da
-                      aplicação e a partir desse layout desenvolvi o projeto
-                      para a empresa, todas as funcionalidades no front, foram
-                      feitas do zero e totalmente na mão, sempre buscando criar
-                      um código novo, simples e otimizado, visando uma boa
-                      manutenção e performance da aplicação.
-                    </p>
-                  </div>
-                  <div class="experiencia-linguagens">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>TypeScript</span>
-                  </div>
-                  <div class="link-projeto">
-                    <h3>Link para o projeto:</h3>
-                    <a href="https://placamais.com.br/" target="_blank"
-                      >https://placamais.com.br/</a
-                    >
-                  </div>
+                <div class="link-projeto">
+                  <h3>Link para o projeto:</h3>
+                  <a href="https://my-tasks-front.vercel.app/" target="_blank"
+                    >https://my-tasks-front.vercel.app/</a
+                  >
                 </div>
-                <!-- rocket-list -->
-                <div class="experiencia-projeto">
-                  <div class="experiencia-projeto-text">
-                    <h3>Rocket-List</h3>
-                    <p>
-                      Projeto desenvolvido com react, foi um projeto que teve
-                      por objetivo manter os conhecimentos em react, pois estava
-                      utilizando bastante o vue no dia a dia, aproveitei para
-                      aprimorar meus conhecimentos e desenvolvi o projeto
-                      utilizando vite e TypeScript, sendo meu primeiro projeto
-                      utilizando TypeScript. Também foi um projeto, que
-                      aproveitei, para implementar os testes E2E, com o cypress,
-                      sendo o meu primeiro projeto, a ter um fluxo completo de
-                      testes automatizados, escrito totalmente do zero.
-                    </p>
-                  </div>
-                  <div class="experiencia-linguagens">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>React</span>
-                    <span>Vite</span>
-                    <span>TypeScript</span>
-                    <span>Styled-components</span>
-                    <span>Cypress</span>
-                  </div>
-                  <div class="link-projeto">
-                    <h3>Link para o projeto:</h3>
-                    <a href="https://rocket-list.vercel.app/" target="_blank"
-                      >https://rocket-list.vercel.app/</a
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- placa-mais -->
+              <div class="experiencia-projeto">
+                <div class="experiencia-projeto-text">
+                  <h3>
+                    Placa mais
+                    <span
+                      style="background-color: #01d281"
+                      class="project-in-progress"
+                      >Freela</span
                     >
-                  </div>
+                  </h3>
+                  <p>
+                    Projeto Freelancer, desenvolvido para a empresa Placa Mais,
+                    que tem por objeto consultar informações completas de acordo
+                    com cada veículo. Todo o front foi feito totalmente do zero,
+                    onde tive acesso a um design da aplicação e a partir desse
+                    layout desenvolvi o projeto para a empresa, todas as
+                    funcionalidades no front, foram feitas do zero e totalmente
+                    na mão, sempre buscando criar um código novo, simples e
+                    otimizado, visando uma boa manutenção e performance da
+                    aplicação.
+                  </p>
                 </div>
-              </li>
-              <li class="grid_slide_item" data-slide="item-end">
-                <!-- radar-covid -->
-                <div class="experiencia-projeto">
-                  <div class="experiencia-projeto-text">
-                    <h3>Radar-Covid</h3>
-                    <p>
-                      Este foi meu segundo projeto utilizando o React js, sempre
-                      buscando colocar em prática meus conhecimentos. Este
-                      projeto teve como objetivo utilizar uma biblioteca de
-                      gráfico juntamento com api, e trazer algumas informações
-                      do COVID-19 para o usuário e também deixando um campo de
-                      busca, que utiliza uma api, para trazer informações sobre
-                      o COVID-19 do estado digitado.
-                    </p>
-                  </div>
-                  <div class="experiencia-linguagens">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>React</span>
-                    <span>Victory</span>
-                  </div>
-                  <div class="link-projeto">
-                    <h3>Link para o projeto:</h3>
-                    <a href="https://radar-covid.vercel.app/" target="_blank"
-                      >https://radar-covid.vercel.app/</a
+                <div class="experiencia-linguagens">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Tailwindcss</span>
+                  <span>JavaScript</span>
+                  <span>TypeScript</span>
+                  <span>jQuery</span>
+                </div>
+                <div class="link-projeto">
+                  <h3>Link para o projeto:</h3>
+                  <a href="https://placamais.com.br/" target="_blank"
+                    >https://placamais.com.br/</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="experiencia-projeto">
+                <div class="experiencia-projeto-text">
+                  <h3>
+                    HEXACODE
+                    <span
+                      style="background-color: #01d281"
+                      class="project-in-progress"
+                      >Freela</span
                     >
-                  </div>
+                  </h3>
+                  <p>
+                    Projeto freelancer, desenvolvido para a empresa HEXACODE,
+                    projeto desenvolvido totalmente do zero, onde tive acesso
+                    somente a um layout no figma e pude desenvolver o front do
+                    zero, sempre tentando manter um código limpo, totalmente
+                    responsivo, organizado e fácil de dar manutenção, para
+                    facilitar futuras mudanças para a empresa.
+                  </p>
                 </div>
-                <!-- loto-checked -->
-                <div class="experiencia-projeto">
-                  <div class="experiencia-projeto-text">
-                    <h3>Loto-Checked</h3>
-                    <p>
-                      Este projeto, foi o primeiro feito, após o termino da
-                      teoria do curo de vue.js, antes de entrar ao módulo
-                      prático, decidi me desafiar e desenvolver este projeto.
-                      Agora sigo com os estudos no vue.js, terminado o módulo
-                      prático, para poder, construir um projeto mais robusto com
-                      o vue.js.
-                    </p>
-                  </div>
-                  <div class="experiencia-linguagens">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Vue.js</span>
-                  </div>
-                  <div class="link-projeto">
-                    <h3>Link para o projeto:</h3>
-                    <a href="https://loto-checked.vercel.app/" target="_blank"
-                      >https://loto-checked.vercel.app/</a
-                    >
-                  </div>
+                <div class="experiencia-linguagens">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Tailwindcss</span>
+                  <span>JavaScript</span>
+                  <span>TypeScript</span>
+                  <span>jQuery</span>
                 </div>
-                <!-- pokeview -->
-                <div class="experiencia-projeto">
-                  <div class="experiencia-projeto-text">
-                    <h3>
-                      PokeView
-                      <span class="project-in-progress">In Progress</span>
-                    </h3>
-                    <p>
-                      Projeto desenvolvido, com o intuito de estudar o
-                      Tailwindcss, foi algo bem simples e pequeno, mas já deu
-                      para atender as expectativas e ficar por dentro das
-                      vantagens que o uso do Tailwindcss oferece. Além disso,
-                      agora é possível ficar por dentro, de todos as novidades,
-                      sobre os pokemons 😁😉 haha
-                    </p>
-                  </div>
-                  <div class="experiencia-linguagens">
-                    <span>HTML</span>
-                    <span>Tailwindcss</span>
-                    <span>JavaScript</span>
-                    <span>TypeScript</span>
-                    <span>Next.js</span>
-                    <span>Axios</span>
-                  </div>
-                  <div class="link-projeto">
-                    <h3>Link para o projeto:</h3>
-                    <a href="https://poke-view.vercel.app/" target="_blank"
-                      >https://poke-view.vercel.app/</a
-                    >
-                  </div>
+                <div class="link-projeto">
+                  <h3>Link para o projeto:</h3>
+                  <a href="https://hexacode-ten.vercel.app/" target="_blank"
+                    >https://hexacode-ten.vercel.app/</a
+                  >
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- rocket-list -->
+              <div class="experiencia-projeto">
+                <div class="experiencia-projeto-text">
+                  <h3>Rocket-List</h3>
+                  <p>
+                    Projeto desenvolvido com react, foi um projeto que teve por
+                    objetivo manter os conhecimentos em react, pois estava
+                    utilizando bastante o vue no dia a dia, aproveitei para
+                    aprimorar meus conhecimentos e desenvolvi o projeto
+                    utilizando vite e TypeScript, sendo meu primeiro projeto
+                    utilizando TypeScript. Também foi um projeto, que
+                    aproveitei, para implementar os testes E2E, com o cypress,
+                    sendo o meu primeiro projeto, a ter um fluxo completo de
+                    testes automatizados, escrito totalmente do zero.
+                  </p>
+                </div>
+                <div class="experiencia-linguagens">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>Vite</span>
+                  <span>TypeScript</span>
+                  <span>Styled-components</span>
+                  <span>Cypress</span>
+                </div>
+                <div class="link-projeto">
+                  <h3>Link para o projeto:</h3>
+                  <a href="https://rocket-list.vercel.app/" target="_blank"
+                    >https://rocket-list.vercel.app/</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- radar-covid -->
+              <div class="experiencia-projeto">
+                <div class="experiencia-projeto-text">
+                  <h3>Radar-Covid</h3>
+                  <p>
+                    Este foi meu segundo projeto utilizando o React js, sempre
+                    buscando colocar em prática meus conhecimentos. Este projeto
+                    teve como objetivo utilizar uma biblioteca de gráfico
+                    juntamento com api, e trazer algumas informações do COVID-19
+                    para o usuário e também deixando um campo de busca, que
+                    utiliza uma api, para trazer informações sobre o COVID-19 do
+                    estado digitado.
+                  </p>
+                </div>
+                <div class="experiencia-linguagens">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>Victory</span>
+                </div>
+                <div class="link-projeto">
+                  <h3>Link para o projeto:</h3>
+                  <a href="https://radar-covid.vercel.app/" target="_blank"
+                    >https://radar-covid.vercel.app/</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="experiencia-projeto">
+                <div class="experiencia-projeto-text">
+                  <h3>Loto-Checked</h3>
+                  <p>
+                    Este projeto, foi o primeiro feito, após o termino da teoria
+                    do curo de vue.js, antes de entrar ao módulo prático, decidi
+                    me desafiar e desenvolver este projeto. Agora sigo com os
+                    estudos no vue.js, terminado o módulo prático, para poder,
+                    construir um projeto mais robusto com o vue.js.
+                  </p>
+                </div>
+                <div class="experiencia-linguagens">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Vue.js</span>
+                </div>
+                <div class="link-projeto">
+                  <h3>Link para o projeto:</h3>
+                  <a href="https://loto-checked.vercel.app/" target="_blank"
+                    >https://loto-checked.vercel.app/</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- pokeview -->
+              <div class="experiencia-projeto">
+                <div class="experiencia-projeto-text">
+                  <h3>
+                    PokeView
+                    <span class="project-in-progress">In Progress</span>
+                  </h3>
+                  <p>
+                    Projeto desenvolvido, com o intuito de estudar o
+                    Tailwindcss, foi algo bem simples e pequeno, mas já deu para
+                    atender as expectativas e ficar por dentro das vantagens que
+                    o uso do Tailwindcss oferece. Além disso, agora é possível
+                    ficar por dentro, de todos as novidades, sobre os pokemons
+                    😁😉 haha
+                  </p>
+                </div>
+                <div class="experiencia-linguagens">
+                  <span>HTML</span>
+                  <span>Tailwindcss</span>
+                  <span>JavaScript</span>
+                  <span>TypeScript</span>
+                  <span>Next.js</span>
+                  <span>Axios</span>
+                </div>
+                <div class="link-projeto">
+                  <h3>Link para o projeto:</h3>
+                  <a href="https://poke-view.vercel.app/" target="_blank"
+                    >https://poke-view.vercel.app/</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="slide_buttons">
-            <button data-slide="button-prev"><</button>
-            <button data-slide="button-next">></button>
-          </div>
+          <div class="swiper-pagination statements-pagination"></div>
         </div>
 
         <div class="more-projects">
@@ -632,6 +689,33 @@
               </li>
               <li>
                 <img
+                  src="./img/shadcn.png"
+                  alt="Shadcn ui"
+                  width="20"
+                  height="20"
+                />
+                shadcn/ui
+              </li>
+              <li>
+                <img
+                  src="./img/radix.png"
+                  alt="Chakra logo"
+                  width="20"
+                  height="20"
+                />
+                radix-ui
+              </li>
+              <li>
+                <img
+                  src="./img/icons/material-design-seeklogo.com.svg"
+                  alt="Chakra logo"
+                  width="20"
+                  height="20"
+                />
+                Material-ui \ MUI
+              </li>
+              <li>
+                <img
                   src="./img/cy-png-1.png"
                   alt="Chakra logo"
                   width="20"
@@ -688,18 +772,50 @@
   </body>
 </html>
 
-<!-- script para o slide -->
-<!-- <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
-<script>
-  // new Glide('.glide', {
-  //   type: 'carousel',
-  //   perView: 1,
-  //   autoplay: 5000,
-  //   hoverPause: true,
-  //   keyboard: true,
-  //   animationDuration: 1000,
-  // }).mount();
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+<script>
+  const swiper = new Swiper('.swiper1', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 10,
+
+    autoplay: {
+      delay: 8000, // Set the delay time in milliseconds (e.g., 3000ms = 3 seconds)
+      disableOnInteraction: true, // Continue autoplay even when the user interacts with the slider
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // breakpoints: {
+    //   1220: {
+    //     slidesPerView: 1,
+    //     slidesPerGroup: 1,
+    //     spaceBetween: 10,
+    //   },
+    //   860: {
+    //     slidesPerView: 2,
+    //     slidesPerGroup: 2,
+    //     spaceBetween: 10,
+    //   },
+    // },
+  });
+</script>
+
+<script>
   const buttonPrev = document.querySelector("[data-slide='button-prev']");
   const buttonNext = document.querySelector("[data-slide='button-next']");
   const slideStart = document.querySelector("[data-slide='item-start']");

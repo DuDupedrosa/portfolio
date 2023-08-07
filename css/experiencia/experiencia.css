@@ -54,6 +54,7 @@
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 2.5rem;
+  height: 292px;
 }
 
 .experiencia-projeto::before {
@@ -64,7 +65,7 @@
   background: linear-gradient(180deg, var(--color-6) 0%, var(--color-10) 100%);
   position: absolute;
   top: 1.25rem;
-  left: -0.25rem;
+  /* left: -0.25rem; */
 }
 
 .experiencia-linguagens {
@@ -236,6 +237,7 @@
   background-color: #ffdd00;
   padding: 4px;
   border-radius: 4px;
+  font-family: var(--family-text);
 }
 
 @keyframes show-slide {
@@ -336,6 +338,19 @@
   animation: show-projects 0.4s forwards;
 }
 
+#experiencia > div span.check-links-mobile {
+  display: none;
+}
+#experiencia > div span.check-links-desktop {
+  display: block;
+}
+
+@media (max-width: 940px) {
+  .experiencia-projeto {
+    height: auto;
+  }
+}
+
 @media (max-width: 57.5rem) {
   #experiencia {
     grid-template-columns: 1fr;
@@ -356,12 +371,43 @@
   #experiencia {
     padding-bottom: 3.75rem;
   }
+
+  .experiencia-projeto {
+    height: 600px;
+  }
+
+  .experiencia-projeto {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .experiencia-linguagens {
+    justify-self: start;
+    margin-bottom: 2.5rem;
+  }
+
+  #experiencia > div {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #experiencia > div p.text {
+    max-width: 520px;
+  }
+
+  #experiencia > div span.check-links-mobile {
+    display: block !important;
+  }
+  #experiencia > div span.check-links-desktop {
+    display: none;
+  }
 }
 
 @media (max-width: 37.5rem) {
   .experiencia-projeto {
     grid-template-columns: 1fr;
     gap: 1.25rem;
+    height: 640px;
   }
 
   .experiencia-linguagens {
@@ -375,6 +421,7 @@
 
   .more-projects button {
     font-size: 12px;
+    margin-top: 32px;
   }
 
   .slide_buttons {

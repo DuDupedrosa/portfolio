@@ -12,3 +12,28 @@
 
 /* formação */
 @import url(./formacao/formacao.css);
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  cursor: grab !important;
+}
+
+.statements-pagination {
+  position: initial !important;
+  margin-top: 20px;
+}
+
+.statements-pagination span {
+  background-color: #5c5d5a;
+  width: 16px;
+  height: 16px;
+}
+
+.statements-pagination span.swiper-pagination-bullet-active {
+  background-color: #800add;
+}
+
+.swiper-slide {
+  background-color: #f5f5f5;
+}
